@@ -13,13 +13,14 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Center the image */
+/* Center the image and make it 50% smaller */
 .image-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin: 20px 0;
 }
 
 .image-container img {
-  max-width: 200px;
-  height: auto;
+  width: 50%; /* Make the image 50% of its original size */
+  height: auto; /* Maintain aspect ratio */
 }
