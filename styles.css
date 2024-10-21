@@ -103,10 +103,18 @@ p {
 }
 
 
+/* Ensure flexbox layout for the hike levels */
+.hike-level {
+  display: flex;
+  align-items: center; /* Align the items vertically centered */
+  margin-bottom: 0px; /* Add some space between each hike level */
+}
+
+
 /* Style only the iframes with the class 'hike-iframe' */
 .hike-iframe {
   width: 100%;
-  height: 170px; /* Adjust this to your desired height */
+  height: 200px; /* Adjust this to your desired height */
   border: none;
   overflow: hidden;
 }
@@ -124,4 +132,66 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.blue-square {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.black-diamond {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  transform: rotate(45deg); /* Rotates the square to look like a diamond */
+  margin: 50px 0; /* Optional: Adds margin for spacing */
+}
+
+.black-double-diamond {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 50px 0;
+}
+
+.black-double-diamond::before,
+.black-double-diamond::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  transform: rotate(45deg); /* Rotates to create diamonds */
+}
+
+.black-double-diamond::before {
+  top: 25%; /* Position the first diamond */
+  left: 0;
+}
+
+.black-double-diamond::after {
+  top: 25%; /* Position the second diamond */
+  right: 0;
+}
+
+/* Adjust size of the icons to fit in front of the iframes */
+.circle, .blue-square, .black-diamond {
+  margin-right: 5px; /* Space between the shape and the iframe */
+}
+
+
+/* Container for hike level: 30% for shape, 70% for iframe */
+.hike-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center; /* Vertically center the items */
+  margin-bottom: 20px; /* Add space between each container */
 }

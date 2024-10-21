@@ -25,26 +25,50 @@
             Info: <a href="https://hikingguy.com/hiking-trails/hiking-orange-county/hike-weir-canyon-trail/">Hiking Guy Review</a><br>
             Time at Trailhead: 07:00AM <br>
             Parking: 6984 E Overlook Terrace, Anaheim, CA 92807, Santiago Oaks Regional Park <br>
-            Distance: 2.8 Miles<br>
+            Distance Options: 2.8 Mi, 6.8 Mi, 9.7 Mi<br>
             Route Type: Loop
           </p>
         </div> <!-- InfoPanel -->
         <div id="RouteWeatherPanel">
-          <div id="Beginner" class="responsive-iframe">
-            <iframe class="hike-iframe" id='mapmyfitness_route' src='https://www.mapmyrun.com/routes/view/embedded/6292925020?width=600&height=110&link=true&line_color=E61900DC&rgbhex=DC0019&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&show_marker_every=1&last_updated=2024-10-20T06:37:55+00:00' 
-                    frameborder='0'>
-            </iframe>
-          </div>
-          <div id="Intermediate" class="responsive-iframe">
-            <iframe class="hike-iframe" id='mapmyfitness_route' src='https://www.mapmyrun.com/routes/view/embedded/6293779627?width=600&height=110&link=true&line_color=E61900DC&rgbhex=DC0019&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&show_marker_every=1&last_updated=2024-10-20T18:03:54+00:00' 
-                    frameborder='0'>
-            </iframe>
-          </div>
-          <div id="Expert" class="responsive-iframe">
-            <iframe class="hike-iframe" id='mapmyfitness_route' src='https://www.mapmyrun.com/routes/view/embedded/6293787922?width=600&height=110&link=true&line_color=E61900DC&rgbhex=DC0019&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&show_marker_every=1&last_updated=2024-10-20T18:12:13+00:00' 
-                    frameborder='0'>
-            </iframe>
-          </div>
+          <div id="Beginner" class="hike-container"> <!-- Opening container for Beginner hike level -->
+            <a href="https://www.mapmyrun.com/routes/view/6292925020">
+              <div class="circle"></div> <!-- Green Circle for Easy -->
+            </a>
+            <div class="responsive-iframe"> <!-- Wrapper for iframe -->
+              <iframe class="hike-iframe" id='mapmyfitness_route' 
+                      src='https://www.mapmyrun.com/routes/view/embedded/6292925020?width=600&height=110&link=true&line_color=E61900DC&rgbhex=DC0019&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&show_marker_every=1&last_updated=2024-10-20T06:37:55+00:00' 
+                      frameborder='0'>
+              </iframe>
+            </div> <!-- Closing responsive-iframe -->
+          </div> <!-- Closing hike-container for Beginner hike level -->
+
+          <!-- Intermediate -->
+          <div id="Intermediate" class="hike-container"> <!-- Opening container for Intermediate hike level -->
+            <a href="https://www.mapmyrun.com/routes/view/6293779627">
+              <div class="blue-square"></div> <!-- Blue Square for Intermediate -->
+            </a>
+            <div class="responsive-iframe"> <!-- Wrapper for iframe -->
+              <iframe class="hike-iframe" id='mapmyfitness_route' 
+                      src='https://www.mapmyrun.com/routes/view/embedded/6293779627?width=600&height=110&link=true&line_color=E61900DC&rgbhex=DC0019&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&show_marker_every=1&last_updated=2024-10-20T18:03:54+00:00' 
+                      frameborder='0'>
+              </iframe>
+            </div> <!-- Closing responsive-iframe -->
+          </div> <!-- Closing hike-container for Intermediate hike level -->
+
+          <!-- Expert -->
+          <div id="Expert" class="hike-container"> <!-- Opening container for Expert hike level -->
+            <a href="https://www.mapmyrun.com/routes/view/6293787922">
+              <div class="black-diamond"></div> <!-- Black Diamond for Expert -->
+            </a>
+            <div class="responsive-iframe"> <!-- Wrapper for iframe -->
+              <iframe class="hike-iframe" id='mapmyfitness_route' 
+                      src='https://www.mapmyrun.com/routes/view/embedded/6293787922?width=600&height=110&link=true&line_color=E61900DC&rgbhex=DC0019&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&show_marker_every=1&last_updated=2024-10-20T18:12:13+00:00' 
+                      frameborder='0'>
+              </iframe>
+            </div> <!-- Closing responsive-iframe -->
+
+          </div> <!-- Closing hike-container for Expert hike level -->
+
           <div id="WeatherWidget">
             <a class="weatherwidget-io" href="https://forecast7.com/en/33d84n117d91/anaheim/?unit=us" data-label_1="ANAHEIM" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="pure" >
               ANAHEIM WEATHER
