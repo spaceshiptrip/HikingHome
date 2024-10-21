@@ -1,24 +1,21 @@
 /* Add container class for max-width and centering */
 .container {
   max-width: 700px;
-  margin: 0 auto; /* Centers the container */
-  padding: 20px; /* Optional: Adds padding to the sides */
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Center the image and make it 50% smaller */
 .image-container {
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
 
-/* Image styling to fit inside the container */
 .image-container img {
-  width: 100%; /* Ensures the image does not overflow */
-  height: auto; /* Maintains the image's aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
-/* Center and enlarge the page title */
 h1 {
   text-align: center;
   font-size: 36px;
@@ -26,7 +23,6 @@ h1 {
   margin-top: 20px;
 }
 
-/* Style for the 'Upcoming Hikes' section */
 h2 {
   font-size: 24px;
   font-weight: bold;
@@ -43,8 +39,65 @@ body {
   line-height: 1.6;
 }
 
-/* Paragraph styling */
 p {
   font-size: 16px;
   line-height: 1.4;
+}
+
+/* Collapsible button style */
+.collapsible {
+  background-color: #f1f1f1;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+/* Add hover effect to the collapsible button */
+.collapsible:hover {
+  background-color: #ddd;
+}
+
+/* Add green plus sign (inside a circle) before the button text */
+.collapsible::before {
+  content: '+';
+  color: white;
+  background-color: green;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-weight: bold;
+  position: absolute;
+  left: -40px; /* Adjust this depending on the positioning */
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s, background-color 0.3s, content 0.3s;
+}
+
+/* Add minus sign when active (section is expanded) */
+.collapsible.active::before {
+  content: '-';
+  background-color: red;
+  transform: translateY(-50%) rotate(0deg);
+}
+
+/* Style for the collapsible content */
+.content {
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Add an active state to the button when clicked */
+.collapsible.active {
+  background-color: #ccc;
 }
