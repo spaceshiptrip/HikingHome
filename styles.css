@@ -135,30 +135,30 @@ p {
 }
 
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: green;
   border-radius: 50%;
 }
 
 .blue-square {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: blue;
 }
 
 .black-diamond {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: black;
   transform: rotate(45deg); /* Rotates the square to look like a diamond */
-  margin: 50px 0; /* Optional: Adds margin for spacing */
+  /* margin: 50px 0; */ /* Optional: Adds margin for spacing */
 }
 
 .black-double-diamond {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin: 50px 0;
 }
 
@@ -191,7 +191,7 @@ p {
 /* Container for hike level: 30% for shape, 70% for iframe */
 .hike-container {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 10% 90%;
   align-items: center; /* Vertically center the items */
   margin-bottom: 20px; /* Add space between each container */
 }
