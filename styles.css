@@ -159,7 +159,7 @@ p {
   display: grid;
   grid-template-columns: 10% 90%; /* 30% for the icon, 70% for the iframe */
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 /* Responsive improvements for smaller screens */
@@ -170,7 +170,7 @@ p {
   .circle, .blue-square, .black-diamond {
     width: 12vw; /* Increase size for smaller screens */
     height: 12vw;
-    max-width: 40px; /* Smaller max width */
-    max-height: 40px;
+    max-width: 20px; /* Smaller max width */
+    max-height: 20px;
   }
 }
