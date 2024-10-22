@@ -107,7 +107,7 @@ p {
 /* Style iframes with class 'hike-iframe' */
 .hike-iframe {
   width: 100%;
-  height: 200px;
+  height: 300px;
   border: none;
   overflow: hidden;
 }
@@ -160,6 +160,31 @@ p {
   grid-template-columns: 10% 90%; /* 30% for the icon, 70% for the iframe */
   align-items: center;
   margin-bottom: 25px;
+}
+
+/* Container for gear icons: 0 to 5 icons, equally spaced */
+.gear-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Adjusts based on number of icons */
+  gap: 10px; /* Space between icons */
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Consistent size for gear icons */
+.gear-container img {
+  width: 40px; /* Consistent width */
+  height: 40px; /* Consistent height */
+  object-fit: contain; /* Ensure the icons are resized while keeping aspect ratio */
+}
+
+/* Responsive improvements for gear icons on smaller screens */
+@media (max-width: 600px) {
+  .gear-container img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /* Responsive improvements for smaller screens */
