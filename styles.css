@@ -145,8 +145,21 @@ p {
 }
 
 .black-diamond {
+  width: 8vw; /* Set width relative to viewport width for responsiveness */
+  height: 8vw; /* Keep height proportional */
   background-color: black;
   transform: rotate(45deg); /* Rotates the square to look like a diamond */
+  margin-right: 5px; /* Add spacing between diamonds */
+}
+
+/* Double black diamond (two diamonds side by side) */
+.double-black-diamond {
+  display: flex; /* Use flexbox to position diamonds side by side */
+  align-items: center;
+}
+
+.double-black-diamond .black-diamond {
+  margin-right: 5px; /* Space between the two diamonds */
 }
 
 /* Adjust size of the icons to fit in front of the iframes */
