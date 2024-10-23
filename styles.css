@@ -212,3 +212,62 @@ p {
     max-height: 20px;
   }
 }
+
+/* Flexbox layout for the panel */
+.panel {
+  display: flex; /* Flexbox for layout */
+  align-items: flex-start; /* Align thumbnail and text content */
+  padding: 10px; /* Padding inside the panel */
+  border: 1px solid #ddd; /* Optional border */
+  border-radius: 8px; /* Rounded corners */
+  width: 100%; /* Ensure the panel takes full width */
+  box-sizing: border-box; /* Include padding and border in the element's width */
+  margin-right: 0; /* Remove any right margin if there was one */
+}
+
+/* Thumbnail image */
+.panel-thumbnail {
+  width: 80px; /* Fixed width for thumbnail */
+  height: 80px; /* Fixed height for thumbnail */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between the thumbnail and content */
+  border-radius: 5px; /* Optional: rounded corners for image */
+}
+
+/* Content container (title + description) */
+.panel-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.panel-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 5px 0; /* No margin on top, space below */
+}
+
+/* Description text */
+.panel-description {
+  font-size: 14px;
+  margin: 0; /* No margin */
+  color: #555; /* Slightly lighter color for description */
+}
+
+
+/* Ensure the <a> tag behaves like a block element */
+.hike-link {
+  display: block; /* Ensure the link behaves like a block */
+  text-decoration: none; /* Remove underline from text */
+  color: inherit; /* Inherit text color */
+}
+
+/* Ensure the hover effect still works without breaking the layout */
+.hike-link:hover {
+  opacity: 0.8; /* Optional hover effect */
+}
+
+/* Circle inside the link */
+.hike-link .circle {
+  margin-right: 10px; /* Space between the circle and the panel */
+}
