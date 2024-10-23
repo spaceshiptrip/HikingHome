@@ -218,7 +218,6 @@ p {
   display: flex; /* Flexbox for layout */
   align-items: flex-start; /* Align thumbnail and text content */
   padding: 10px; /* Padding inside the panel */
-  border: 1px solid #ddd; /* Optional border */
   border-radius: 8px; /* Rounded corners */
   width: 100%; /* Ensure the panel takes full width */
   box-sizing: border-box; /* Include padding and border in the element's width */
