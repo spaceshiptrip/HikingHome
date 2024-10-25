@@ -1,6 +1,6 @@
 /* Add container class for max-width and centering */
 .container {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -270,3 +270,89 @@ p {
 .hike-link .circle {
   margin-right: 10px; /* Space between the circle and the panel */
 }
+
+
+   /* Black top bar */
+   .top-bar {
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  .top-bar .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+  /* Hamburger menu styling */
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+
+  /* Menu list for navigation */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+  }
+
+  .menu a:hover {
+    background-color: #333;
+  }
+
+  /* Show menu when hamburger is clicked */
+  .menu.show {
+    display: block;
+  }
+
+  /* Media query for larger screens */
+  @media(min-width: 600px) {
+    .hamburger-menu {
+      display: none;
+    }
+    .menu {
+      display: flex;
+      position: static;
+      background-color: transparent;
+    }
+    .menu a {
+      padding: 0 15px;
+      background-color: transparent;
+    }
+    .menu a:hover {
+      background-color: transparent;
+    }
+  }
+
+  /* Show hamburger for small screens */
+  @media(max-width: 600px) {
+    .hamburger-menu {
+      display: flex;
+    }
+  }
