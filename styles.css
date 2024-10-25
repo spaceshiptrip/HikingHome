@@ -1,6 +1,6 @@
 /* Add container class for max-width and centering */
 .container {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
