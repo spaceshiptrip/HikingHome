@@ -93,7 +93,7 @@ p {
   transform: translateY(-50%) rotate(0deg);
 }
 
-.content {
+.content { /* info content */
   padding: 0 18px;             /* Padding inside content */
   display: block;
   overflow: hidden;            /* Prevents overflow */
@@ -367,4 +367,28 @@ p {
   .hamburger-menu {
     display: flex;
   }
+}
+
+/* Adjust container padding for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 0;            /* Left and right padding only 1% on smaller screens */
+    margin-top: 80px;         /* Keeps the top margin to avoid overlap with fixed top bar */
+  }
+
+  .hike-section-container {
+    padding: 0 0;
+    margin: 0;
+  }
+
+  .collapsible {
+    margin-bottom: 10px;
+  }
+
+
+  .content { /* info content */
+    padding: 0px;
+    margin: 0px;
+  }
+
 }
