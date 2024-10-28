@@ -56,7 +56,7 @@ p {
   color: black;                /* Text color */
   cursor: pointer;             /* Pointer to indicate it's clickable */
   padding: 10px;               /* Padding inside the button */
-  width: 100%;                 /* Full-width button */
+  width: 90%;                 /* Full-width button */
   border: none;                /* No border */
   text-align: left;            /* Left-aligns text */
   outline: none;               /* Removes default outline */
@@ -88,6 +88,7 @@ p {
 
 .collapsible.active::before {
   content: '-';                /* Changes icon to minus on expand */
+  padding: 5px 11px;           /* Padding inside icon */
   background-color: red;       /* Red background for expanded state */
   transform: translateY(-50%) rotate(0deg);
 }
