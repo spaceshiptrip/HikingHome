@@ -172,6 +172,11 @@ p {
   margin-right: 5px;           /* Space between diamonds */
 }
 
+.hike-section-container {
+  margin-bottom: 30px;
+  margin-right: 5%;
+  margin-left: 5%; 
+}
 /* General layout for hike containers */
 .hike-container {
   display: grid;               /* Grid layout for consistency */
