@@ -1,125 +1,133 @@
-/* Add container class for max-width and centering */
+/* Container styling for main content */
 .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  margin-top: 60px; /* Adjusted to prevent content from hiding under the fixed top bar */
+  max-width: 900px;           /* Sets a maximum width for readability */
+  margin: 0 auto;              /* Centers the container on the page */
+  padding: 20px;               /* Padding inside the container for spacing */
+  margin-top: 80px;            /* Adds space to prevent overlap with the fixed top bar */
 }
 
+/* Styling for the main image container */
 .image-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
+  display: flex;               /* Centers image horizontally */
+  justify-content: center;     /* Aligns image to the center */
+  margin: 20px 0;              /* Vertical spacing around the image */
 }
 
 .image-container img {
-  width: 100%;
-  height: auto;
+  width: 100%;                 /* Makes the image responsive */
+  height: auto;                /* Maintains the image's aspect ratio */
 }
 
+/* Main title styling */
 h1 {
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  margin-top: 20px;
+  text-align: center;          /* Centers the main title */
+  font-size: 36px;             /* Sets a large font size */
+  font-weight: bold;           /* Makes the font bold */
+  margin-top: 20px;            /* Adds space above the title */
 }
 
+/* Subheader and section header styling */
+h2, h3 {
+  font-weight: bold;           /* Makes the font bold for emphasis */
+  margin-bottom: 10px;         /* Adds space below the header */
+}
 h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 24px;             /* Slightly smaller than the main title */
 }
-
 h3 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 18px;             /* Smaller font size for subsections */
 }
 
+/* Body text styling */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: Arial, sans-serif; /* Uses a standard, readable font */
+  line-height: 1.6;              /* Line spacing for readability */
 }
 
+/* Paragraph styling */
 p {
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 16px;             /* Standard readable font size */
+  line-height: 1.4;            /* Moderate line spacing for readability */
 }
 
-/* Collapsible button style */
+/* Collapsible button styling for expanding sections */
 .collapsible {
-  background-color: #f1f1f1;
-  color: black;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 4px;
-  margin-bottom: 5px;
-  position: relative;
+  background-color: #f1f1f1;   /* Light grey background */
+  color: black;                /* Text color */
+  cursor: pointer;             /* Pointer to indicate it's clickable */
+  padding: 10px;               /* Padding inside the button */
+  width: 100%;                 /* Full-width button */
+  border: none;                /* No border */
+  text-align: left;            /* Left-aligns text */
+  outline: none;               /* Removes default outline */
+  font-size: 18px;             /* Large font size for readability */
+  font-weight: bold;           /* Bold font for visibility */
+  border-radius: 4px;          /* Rounded corners */
+  margin-bottom: 5px;          /* Space below each button */
+  margin-left: 40px;
+  position: relative;          /* Allows positioning of the icon */
 }
 
 .collapsible:hover {
-  background-color: #ddd;
+  background-color: #ddd;      /* Darkens the background on hover */
 }
 
 .collapsible::before {
-  content: '+';
-  color: white;
-  background-color: green;
-  border-radius: 50%;
-  padding: 5px 10px;
-  font-weight: bold;
-  position: absolute;
-  left: -40px;
-  top: 50%;
-  transform: translateY(-50%);
+  content: '+';                /* Default icon */
+  color: white;                /* Icon color */
+  background-color: green;     /* Background color for icon */
+  border-radius: 50%;          /* Circular icon */
+  padding: 5px 10px;           /* Padding inside icon */
+  font-weight: bold;           /* Bold font */
+  position: absolute;          /* Absolute positioning for alignment */
+  left: -40px;                 /* Positions icon to the left */
+  top: 50%;                    /* Centers icon vertically */
+  transform: translateY(-50%); /* Centers icon exactly */
   transition: transform 0.3s, background-color 0.3s, content 0.3s;
 }
 
 .collapsible.active::before {
-  content: '-';
-  background-color: red;
+  content: '-';                /* Changes icon to minus on expand */
+  background-color: red;       /* Red background for expanded state */
   transform: translateY(-50%) rotate(0deg);
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0 18px;             /* Padding inside content */
   display: block;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
+  overflow: hidden;            /* Prevents overflow */
+  max-height: 0;               /* Hidden by default */
+  transition: max-height 0.2s ease-out; /* Smooth reveal */
 }
 
+/* Collapsible active styling */
 .collapsible.active {
-  background-color: #ccc;
+  background-color: #ccc;      /* Changes background color when expanded */
 }
 
-/* Flexbox layout for hike levels */
+/* Flexbox layout for hike level icons and labels */
 .hike-level {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0px;
+  display: flex;               /* Flex layout */
+  align-items: center;         /* Aligns items vertically */
+  margin-bottom: 0px;          /* Removes extra space */
 }
 
-/* Style iframes with class 'hike-iframe' */
+/* Iframe styling for maps */
 .hike-iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
+  width: 100%;                 /* Full-width for responsiveness */
+  height: 300px;               /* Fixed height */
+  border: none;                /* Removes iframe border */
   overflow: hidden;
 }
 
-/* Responsive iframe wrapper */
+/* Wrapper for responsive iframe */
 .responsive-iframe {
-  position: relative;
+  position: relative;          /* Positions iframe within wrapper */
   overflow: hidden;
-  padding-top: 30%;
+  padding-top: 30%;            /* Maintains aspect ratio */
 }
 
+/* Iframe fills the wrapper */
 .responsive-iframe .hike-iframe {
   position: absolute;
   top: 0;
@@ -128,7 +136,7 @@ p {
   height: 100%;
 }
 
-/* Make icons responsive */
+/* Responsive icon sizing */
 .circle, .blue-square, .black-diamond {
   width: 8vw; /* Use a percentage of viewport width */
   height: 8vw; /* Keep height proportional */
@@ -137,12 +145,12 @@ p {
 }
 
 .circle {
-  background-color: green;
-  border-radius: 50%;
+  background-color: green;     /* Green for beginner level */
+  border-radius: 50%;          /* Circular shape */
 }
 
 .blue-square {
-  background-color: blue;
+  background-color: blue;      /* Blue for intermediate level */
 }
 
 .black-diamond {
@@ -153,30 +161,25 @@ p {
   margin-right: 5px; /* Add spacing between diamonds */
 }
 
-/* Double black diamond (two diamonds side by side) */
+/* Layout for double black diamond icon */
 .double-black-diamond {
-  display: flex; /* Use flexbox to position diamonds side by side */
+  display: flex;               /* Flex layout to align diamonds side by side */
   align-items: center;
 }
 
-.double-black-diamond .black-diamond {
-  margin-right: 5px; /* Space between the two diamonds */
+.circle .blue-square .double-black-diamond .black-diamond {
+  margin-right: 5px;           /* Space between diamonds */
 }
 
-/* Adjust size of the icons to fit in front of the iframes */
-.circle, .blue-square, .black-diamond {
-  margin-right: 5px;
-}
-
-/* Container for hike level: 30% for shape, 70% for iframe */
+/* General layout for hike containers */
 .hike-container {
-  display: grid;
-  grid-template-columns: 10% 90%; /* 30% for the icon, 70% for the iframe */
+  display: grid;               /* Grid layout for consistency */
+  grid-template-columns: 10% 90%; /* Icon and content distribution */
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 25px;         /* Space between containers */
 }
 
-/* Container for gear icons: 0 to 5 icons, equally spaced */
+/* Gear icon layout */
 .gear-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Adjusts based on number of icons */
@@ -204,12 +207,12 @@ p {
 /* Responsive improvements for smaller screens */
 @media (max-width: 600px) {
   .hike-container {
-    grid-template-columns: 10% 90%; /* Adjusts the layout on smaller screens */
+    grid-template-columns: 10% 90%; /* Adjusts layout for small screens */
   }
   .circle, .blue-square, .black-diamond {
-    width: 12vw; /* Increase size for smaller screens */
+    width: 12vw;               /* Larger size for visibility on mobile */
     height: 12vw;
-    max-width: 20px; /* Smaller max width */
+    max-width: 20px;           /* Limits size for smaller screens */
     max-height: 20px;
   }
 }
@@ -254,7 +257,6 @@ p {
   color: #555; /* Slightly lighter color for description */
 }
 
-
 /* Ensure the <a> tag behaves like a block element */
 .hike-link {
   display: block; /* Ensure the link behaves like a block */
@@ -271,7 +273,6 @@ p {
 .hike-link .circle {
   margin-right: 10px; /* Space between the circle and the panel */
 }
-
 
 /* Black top bar */
 .top-bar {
