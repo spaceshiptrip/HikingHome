@@ -392,3 +392,83 @@ p {
   }
 
 }
+
+
+/* New Stuff */
+
+
+/* Date label overlay on cards */
+.date-label {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  color: white;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+/* Centered card text */
+.hike-card .card-body {
+  text-align: center;
+}
+
+/* Hiking event section style */
+.hiking-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Modal styling adjustments */
+.modal-body img {
+  margin-bottom: 15px;
+}
+
+/* Carousel image size adjustments */
+
+/* Default (desktop) styling */
+.carousel-item img {
+  width: 350px; /* Limit the width to 350px */
+  height: 350px; /* Limit the height to 350px */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  margin: 0 auto; /* Center the image within the carousel */
+}
+
+/* Adjust carousel size for smaller screens (mobile) */
+@media (max-width: 576px) {
+  .carousel-item img {
+    width: 170px; /* Reduce width to 170px for mobile */
+    height: 170px; /* Reduce height to 170px for mobile */
+  }
+}
+
+
+/* Carousel caption with background overlay for readability */
+.carousel-caption {
+  background: linear-gradient(to top, rgba(211, 211, 211, 0.6), rgba(211, 211, 211, 0) 60%);
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  color: #fff; /* Set text color to white */
+  text-align: left;
+}
+
+/* White text with black shadow for strong contrast */
+.carousel-caption h3,
+.carousel-caption p {
+  color: #fff; /* White text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Black shadow for enhanced readability */
+}
+
+/* Adjust text size */
+.carousel-caption h3 {
+  font-size: 1.5rem;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+}
+
+
+/* end new stuff */
