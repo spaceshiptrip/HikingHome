@@ -535,5 +535,22 @@ p {
   display: inline-block;
 }
 
+/* Indentation and styling for lists within the modal */
+.modal-body .indented-list {
+  padding-left: 40px; /* Adjust padding for indentation */
+  list-style-type: disc; /* Disc bullets for list items */
+}
+
+.modal-body .indented-list li {
+  margin-left: 0; /* Removes any additional indentation for list items */
+  padding-left: 10px; /* Adds padding to ensure indentation within the list */
+}
+
+/* Removes inline block display on modal-body p to avoid conflicting behavior */
+.modal-body p {
+  display: block; /* Reverts to block display for consistent layout */
+}
+
+
 
 /* end new stuff */
