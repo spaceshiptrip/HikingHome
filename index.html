@@ -21,6 +21,7 @@
     </div>
     <div class="menu">
       <a href="#happenings">Happenings</a>
+      <a href="#birthdays">Birthdays</a>
       <a href="#hikes">Hikes</a>
     </div>
   </div>
@@ -103,7 +104,7 @@
     </section>
 
     <!-- Hiking Information Cards Section -->
-    <section id="hiking" class="hiking-section mt-5">
+    <section id="happenings-cards" class="hiking-section mt-5">
       <h2>Hiking Events</h2>
       <div class="row">
         <!-- Hiking Card Example -->
@@ -210,28 +211,31 @@
       <div class="image-container">
         <img src="assets/happenings/birthday_cake.jpg" alt="Happy Birthday!!">
       </div> <!-- image-container -->
-    <p><span>NOVEMBER</span></p>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card hike-card" onclick="openModal('bucaModal')">
-          <img src="assets/happenings/buca_christmas.jpg" class="card-img-top" alt="Hike Image 1">
-          <div class="card-img-overlay">
-            <small class="date-label">2024-Dec</small>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Nadabarkada Christmas at Buca</h5>
-            <p class="card-text">Another wonderful year with wonderful friends</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> <!-- container -->
+      <p><span>NOVEMBER</span></p>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card hike-card" onclick="openModal('bucaModal')">
+            <img src="assets/happenings/buca_christmas.jpg" class="card-img-top" alt="Hike Image 1">
+            <div class="card-img-overlay">
+              <small class="date-label">2024-Dec</small>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Nadabarkada Christmas at Buca</h5>
+              <p class="card-text">Another wonderful year with wonderful friends</p>
+            </div>
+          </div> <!-- card -->
+        </div> <!-- col-md-4 mb-4 -->
+
+      </div> <!-- row -->
+    </div> <!-- container -->
 
   </section>
   <!-- End New Stuff -->
 
 
   <div class="container">
+    <section id="hikes">
     <h1>Just Around the Corner Hiking Club</h1>
 
     <!-- Image added below the title -->
@@ -752,6 +756,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="script.js"></script> -->
   
-
+</section>
 </body>
 </html>
