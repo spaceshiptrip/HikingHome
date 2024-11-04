@@ -46,7 +46,7 @@
           </div>
 
           <!-- Second Slide -->
-          <div class="carousel-item" onclick="openModal('hikeModal1')">
+          <div class="carousel-item" onclick="window.location.href='#hikes'">
             <img src="assets/compass_mtn_clip.webp" class="d-block w-100" alt="Happening 2">
             <div class="carousel-caption">
               <h3>Hiking Club!</h3>
@@ -64,7 +64,7 @@
           </div>
 
           <!-- Third Slide -->
-          <div class="carousel-item">
+          <div class="carousel-item" onclick="openModal('bucaModal')">
             <img src="assets/happenings/buca_christmas.jpg" class="d-block w-100" alt="Happening 2">
             <div class="carousel-caption">
               <h3>Nadabarkada Christmas</h3>
@@ -72,7 +72,7 @@
             </div>
           </div>
           <!-- Fourth Slide -->
-          <div class="carousel-item" onclick="window.location.href='#hikes'">
+          <div class="carousel-item" onclick="openModal('nightHikeModal')">
             <img src="assets/happenings/night_hike_view.jpg" class="d-block w-100" alt="Happening 2">
             <div class="carousel-caption">
               <h3>Friday After Thanksgiving Night Hike</h3>
@@ -175,35 +175,78 @@
     </div>
   </div> <!-- hikeModal1 -->
 
-<!-- bucaModal -->
-<div class="modal fade" id="bucaModal" tabindex="-1" aria-labelledby="bucaModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="bucaModalLabel">NadaBarkada Buca Christmas Brunch 2024</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <!-- Detailed information for this hike goes here -->
-        <img src="assets/happenings/buca_table.avif" class="img-fluid d-block mx-auto" alt="Buca Food Image">
-        <p><b>Location:</b><br>
-          <a href="https://maps.app.goo.gl/fUti1fd37iwVacWj9">Buca di Bepo<br>
-          <span>80 W Green St, Pasadena, CA 91105</span></a>
-        </p>
-        <p><b>Date:</b><span>TBD</span></p>
-        <p><b>Details:</b><br>
-          <span>2nd Annual NadaBarkada Brunch at Buca!</span><br>
-          <span>Please add information to<a href="https://docs.google.com/spreadsheets/d/1hhHlgXW6-ci8EHOvAJmLJc1yLcrGkS99aO33QAjArd0/edit?usp=sharing">the Google Sheet.</a></span><br>
-          <span>Feast with food and drink, then $30 White Elephant. Hope to see everyone there!</span>
-        </p>
-      </div> <!-- modal-body -->
-    </div> <!-- modal-content -->
-  </div> <!-- modal-dialog -->
-</div> <!-- bucaModal -->
+  <!-- bucaModal -->
+  <div class="modal fade" id="bucaModal" tabindex="-1" aria-labelledby="bucaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bucaModalLabel">NadaBarkada Buca Christmas Brunch 2024</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Detailed information for this hike goes here -->
+          <img src="assets/happenings/buca_table.avif" class="img-fluid d-block mx-auto" alt="Buca Food Image">
+          <p><b>Location:</b><br>
+            <a href="https://maps.app.goo.gl/fUti1fd37iwVacWj9">Buca di Bepo<br>
+            <span>80 W Green St, Pasadena, CA 91105</span></a>
+          </p>
+          <p><b>Date:</b><span>TBD</span></p>
+          <p><b>Details:</b><br>
+            <span>2nd Annual NadaBarkada Brunch at Buca!</span><br>
+            <span>Please add information to<a href="https://docs.google.com/spreadsheets/d/1hhHlgXW6-ci8EHOvAJmLJc1yLcrGkS99aO33QAjArd0/edit?usp=sharing">the Google Sheet.</a></span><br>
+            <span>Feast with food and drink, then $30 White Elephant. Hope to see everyone there!</span>
+          </p>
+        </div> <!-- modal-body -->
+      </div> <!-- modal-content -->
+    </div> <!-- modal-dialog -->
+  </div> <!-- bucaModal -->
 
 
+    <!-- nightHikeModal -->
+    <div class="modal fade" id="nightHikeModal" tabindex="-1" aria-labelledby="nightHikeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="nightHikeModalTitle">Day after Thanksgiving Night Hike</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> <!-- modal header -->
+          <div class="modal-body">
+            <!-- <div class="content"> -->
+              <p><b>Location:</b><br>
+              <span><a href="https://maps.app.goo.gl/MKkJGizo9MwuxVTw8" target="_blank" rel="noopener noreferrer">Cobb Estate Trailhead Echo Mt</a></span>
+              <br></p>
+              <p><b>Time at Trailhead:</b><span>05:00PM </span></p>
+              <p><b>Parking:</b><br><span>Street parking on Lake and E Loma Alta Dr, Pasadena</span></p><br>
+              <p><b>Distance:</b><br><span>Distance: 5.5 Miles</span><br></p>
+              <p><b>Route Type:</b><br><span>Out and back</span><br></p>
+              <span><div class="blue-square"></div>Intermediate trail with elevation</span>
+              <div id="echo-footer">
+                <iframe id="mapmyfitness_route" 
+                        src="https://www.mapmyrun.com/routes/view/embedded/6286213267?width=600&height=376&elevation=true&info=true&line_color=E61900DC&rgbhex=DC0019&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&show_marker_every=1&last_updated=2024-10-15T06:52:36+00:00"
+                        height="679px" 
+                        width="100%" 
+                        frameborder="0">
+                </iframe>
+                <a class="weatherwidget-io" href="https://forecast7.com/en/34d15n118d14/pasadena/?unit=us" data-label_1="PASADENA" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="pure" >
+                  PASADENA WEATHER
+                </a>
+                <script>
+                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+                <a rel="noopener noreferrer" target="_blank" href="https://www.mapmyrun.com/routes/view/6286213267">
+                  <p>View Route Details</p>
+                </a>
+              </div> <!-- echo-footer -->
+            <!-- </div> content -->
+     
+          </div> <!-- modal-body -->
+        </div> <!-- modal-content -->
+      </div> <!-- modal-dialog -->
+    </div> <!-- nightHikeModal -->
 
   <!-- add the birthday stuff -->
 
