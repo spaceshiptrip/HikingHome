@@ -76,8 +76,20 @@
               <h3>Friday After Thanksgiving Night Hike</h3>
               <p>Echo Mountain</p>
             </div>
-          </div>
+          </div> <!-- carousel-item -->
+
+          <div class="carousel-item">
+            <img src="assets/happenings/birthday_cake.jpg" class="d-block w-100" alt="Happening 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Upcoming Birthdays</h3>
+              <p>Happy Birthday!</p>
+            </div>
+          </div> <!-- carousel-item -->
+
+
         </div> <!-- carousel inner -->
+
+
         <!-- Menu Controls for Carousel -->
         <a class="carousel-control-prev" href="#happeningsCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -123,7 +135,7 @@
           </div>
 
         <div class="col-md-4 mb-4">
-          <div class="card hike-card" onclick="openModal('hikeModal1')">
+          <div class="card hike-card" onclick="openModal('bucaModal')">
             <img src="assets/happenings/buca_christmas.jpg" class="card-img-top" alt="Hike Image 1">
             <div class="card-img-overlay">
               <small class="date-label">2024-Dec</small>
@@ -159,8 +171,47 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> <!-- hikeModal1 -->
 
+<!-- bucaModal -->
+<div class="modal fade" id="bucaModal" tabindex="-1" aria-labelledby="bucaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bucaModalLabel">NadaBarkada Buca Christmas Brunch 2024</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Detailed information for this hike goes here -->
+        <img src="assets/happenings/buca_table.avif" class="img-fluid d-block mx-auto" alt="Buca Food Image">
+        <p><b>Location:</b><br>
+          <a href="https://maps.app.goo.gl/fUti1fd37iwVacWj9">Buca di Bepo<br>
+          <span>80 W Green St, Pasadena, CA 91105</span></a>
+        </p>
+        <p><b>Date:</b><span>TBD</span></p>
+        <p><b>Details:</b><br>
+          <span>2nd Annual NadaBarkada Brunch at Buca!</span><br>
+          <span>Please add information to<a href="https://docs.google.com/spreadsheets/d/1hhHlgXW6-ci8EHOvAJmLJc1yLcrGkS99aO33QAjArd0/edit?usp=sharing">the Google Sheet.</a></span><br>
+          <span>Feast with food and drink, then $30 White Elephant. Hope to see everyone there!</span>
+        </p>
+      </div> <!-- modal-body -->
+    </div> <!-- modal-content -->
+  </div> <!-- modal-dialog -->
+</div> <!-- bucaModal -->
+
+
+
+  <!-- add the birthday stuff -->
+
+  <section id="birthdays">
+    <div class="container">
+      <div class="image-container">
+        <img src="assets/happenings/birthday_cake.jpg" alt="Happy Birthday!!">
+      </div> <!-- image-container -->
+    </div> <!-- container -->
+  </section>
   <!-- End New Stuff -->
 
 

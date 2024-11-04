@@ -470,5 +470,43 @@ p {
   font-size: 1rem;
 }
 
+/* Image inside modal with max size and responsiveness */
+.modal-body img {
+  max-width: 100%;        /* Ensures the image does not exceed the modal width */
+  max-height: 320px;      /* Limits the height to 480px for desktop */
+  width: auto;            /* Maintains aspect ratio */
+  height: auto;           /* Maintains aspect ratio */
+}
+
+/* Smaller screens - reduce max size */
+@media (max-width: 576px) {
+  .modal-body img {
+    max-width: 100%;      /* Full width on small screens */
+    max-height: 170px;    /* Limits height on mobile */
+  }
+}
+
+
+.modal-body p {
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+.modal-body p b {
+  display: inline-block;
+  min-width: 80px; /* Adjust width as needed */
+  margin-right: 10px; /* Space between label and text */
+  vertical-align: top;
+}
+
+.modal-body p a {
+  display: inline-block;
+  margin-left: 90px; /* Indentation for links after label */
+}
+
+.modal-body p br + span {
+  margin-left: 90px; /* Indentation for text following line breaks */
+  display: inline-block;
+}
+
 
 /* end new stuff */
