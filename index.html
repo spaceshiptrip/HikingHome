@@ -216,11 +216,20 @@
       <div class="row">
 
         <div class="col-md-4 mb-4">
-          <div class="card hike-card" data-name="Cora" onclick="toggleName(this)">
+          <div class="card hike-card" onclick="toggleCard(this)" 
+               data-name="Cora"
+               data-baby-img="assets/birthdays/81.jpeg"
+               data-current-img="assets/birthdays/birthday_cake.webp">
+            
+            <!-- Baby image displayed by default -->
             <img src="assets/birthdays/81.jpeg" class="card-img-top" alt="Birthday Image">
+            
+            <!-- Date overlay -->
             <div class="card-img-overlay">
               <small class="date-label">2024-Nov-07</small>
             </div>
+            
+            <!-- Card content -->
             <div class="card-body">
               <h5 class="card-title">Happy Birthday!</h5>
               <p class="card-text">Click to unhide name</p>
