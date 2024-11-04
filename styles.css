@@ -518,10 +518,17 @@ p {
   vertical-align: top;
 }
 
-.modal-body p a {
+.modal-body p {
   display: inline-block;
-  margin-left: 90px; /* Indentation for links after label */
+  /* margin-left: 90px; Indentation for links after label */
 }
+
+.modal-body a {
+  display: inline; /* Ensure inline display */
+  margin: 0; /* Reset any extra margins */
+  padding: 0; /* Reset any extra padding */
+}
+
 
 .modal-body p br + span {
   margin-left: 90px; /* Indentation for text following line breaks */
