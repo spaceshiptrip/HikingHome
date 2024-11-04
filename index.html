@@ -214,15 +214,29 @@
       <p><span>NOVEMBER</span></p>
 
       <div class="row">
+
         <div class="col-md-4 mb-4">
-          <div class="card hike-card" onclick="openModal('bucaModal')">
-            <img src="assets/happenings/buca_christmas.jpg" class="card-img-top" alt="Hike Image 1">
+          <div class="card hike-card" data-name="Cora" onclick="toggleName(this)">
+            <img src="assets/birthdays/81.jpeg" class="card-img-top" alt="Birthday Image">
             <div class="card-img-overlay">
-              <small class="date-label">2024-Dec</small>
+              <small class="date-label">2024-Nov-07</small>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Nadabarkada Christmas at Buca</h5>
-              <p class="card-text">Another wonderful year with wonderful friends</p>
+              <h5 class="card-title">Happy Birthday!</h5>
+              <p class="card-text">Click to unhide name</p>
+            </div>
+          </div> <!-- card -->
+        </div> <!-- col-md-4 mb-4 -->
+        
+        <div class="col-md-4 mb-4">
+          <div class="card hike-card" data-name="Jenn" onclick="toggleName(this)">
+            <img src="assets/birthdays/birthday_cake.webp" class="card-img-top" alt="Birthday Image">
+            <div class="card-img-overlay">
+              <small class="date-label">2024-Nov-07</small>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Happy Birthday!</h5>
+              <p class="card-text">Click to unhide name</p>
             </div>
           </div> <!-- card -->
         </div> <!-- col-md-4 mb-4 -->
@@ -723,38 +737,12 @@
 
     </div> <!-- PastHikes -->
   </div> <!-- Container Div -->
-  <script>
-    // JavaScript to make the collapsible work
-    var coll = document.getElementsByClassName("collapsible");
-    for (var i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } 
-      });
-    }
 
-    // Function to toggle the visibility of the menu in small screens
-    function toggleMenu() {
-      const menu = document.querySelector('.menu');
-      menu.classList.toggle('show');
-    }
-
-    // Function to open a modal by ID
-    function openModal(modalId) {
-      $('#' + modalId).modal('show');
-    }
-
-  </script>
   <script src="main.js"></script>
   <!-- Bootstrap and Custom JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
   
 </section>
 </body>
