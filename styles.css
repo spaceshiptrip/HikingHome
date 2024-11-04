@@ -429,7 +429,7 @@ p {
 
 /* Default (desktop) styling */
 .carousel-item img {
-  width: 350px; /* Limit the width to 350px */
+  width: 480px; /* Limit the width to 350px */
   height: 350px; /* Limit the height to 350px */
   object-fit: cover; /* Ensures images cover the area without distortion */
   margin: 0 auto; /* Center the image within the carousel */
@@ -438,8 +438,13 @@ p {
 /* Adjust carousel size for smaller screens (mobile) */
 @media (max-width: 576px) {
   .carousel-item img {
-    width: 170px; /* Reduce width to 170px for mobile */
-    height: 170px; /* Reduce height to 170px for mobile */
+    width: 100%; /* Reduce width to 170px for mobile */
+    height: 350px; /* Reduce height to 170px for mobile */
+  }
+
+  .carousel-caption {
+    padding: 0px;
+    margin-top: 100px;
   }
 }
 
