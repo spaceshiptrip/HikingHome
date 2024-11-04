@@ -435,19 +435,6 @@ p {
   margin: 0 auto; /* Center the image within the carousel */
 }
 
-/* Adjust carousel size for smaller screens (mobile) */
-@media (max-width: 576px) {
-  .carousel-item img {
-    width: 100%; /* Reduce width to 170px for mobile */
-    height: 350px; /* Reduce height to 170px for mobile */
-  }
-
-  .carousel-caption {
-    padding: 0px;
-    margin-top: 100px;
-  }
-}
-
 
 /* Carousel caption with background overlay for readability */
 .carousel-caption {
@@ -457,6 +444,7 @@ p {
   width: 100%;
   color: #fff; /* Set text color to white */
   text-align: left;
+  position: absolute;
 }
 
 /* White text with black shadow for strong contrast */
@@ -464,6 +452,8 @@ p {
 .carousel-caption p {
   color: #fff; /* White text */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Black shadow for enhanced readability */
+  margin: 0; /* Remove default margin */
+
 }
 
 /* Adjust text size */
@@ -473,6 +463,31 @@ p {
 
 .carousel-caption p {
   font-size: 1rem;
+}
+
+/* Adjust carousel size for smaller screens (mobile) */
+@media (max-width: 576px) {
+  .carousel-item img {
+    /* width: 100%; Reduce width to 170px for mobile */
+    /* height: 350px; Reduce height to 170px for mobile */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+  }
+
+  /* Adjust caption background and text size on mobile */
+  .carousel-caption {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) 60%);
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.2rem; /* Slightly reduce font size */
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem; /* Slightly reduce font size */
+  }
+
+
 }
 
 /* Image inside modal with max size and responsiveness */
