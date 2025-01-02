@@ -593,66 +593,6 @@
     <div id="NextHike" class="hike-section-container">
       <h2>Next Hike:</h2>
 
-
-      <div id="EchoMtnLoop">
-        <!-- Add a button for the collapsible section -->
-        <button class="collapsible">2024-Dec-28: Echo Mountain / Idlehour Loop</button>
-        <div class="content">
-          <p>
-            Location: <a href="https://maps.app.goo.gl/MKkJGizo9MwuxVTw8" target="_blank" rel="noopener noreferrer">Cobb Estate Trailhead Echo Mt</a><br>
-            Time at Trailhead: 06:30AM <br>
-            Parking: Lake and E Loma Alta Dr, Pasadena<br>
-            Distance: 5.5 mi / 16.5 mi<br>
-            Route Type: Out and back / Loop<br>
-          </p>
-
-          <div id="echo-footer">
-            <div class="blue-square"></div>
-
-            <iframe id="mapmyfitness_route" 
-                    src="https://www.mapmyrun.com/routes/view/embedded/6286213267?width=600&height=376&elevation=true&info=true&line_color=E61900DC&rgbhex=DC0019&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&show_marker_every=1&last_updated=2024-10-15T06:52:36+00:00"
-                    height="679px" 
-                    width="100%" 
-                    frameborder="0">
-            </iframe>
-            <a class="weatherwidget-io" href="https://forecast7.com/en/34d15n118d14/pasadena/?unit=us" data-label_1="PASADENA" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="pure" >
-              PASADENA WEATHER
-            </a>
-            <script>
-              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-            </script>
-            <a rel="noopener noreferrer" target="_blank" href="https://www.mapmyrun.com/routes/view/6286213267">
-              <p>View Route Details</p>
-            </a>
-          </div> <!-- echo-footer -->
-
-          <!-- Expert -->
-          <div id="Expert" class="hike-container"> <!-- Opening container for Expert hike level -->
-            <div class="black-diamond"> </div>
-            <a href="https://www.mapmyrun.com/routes/view/6290258278" class="hike-link">
-              <div class="panel"> <!-- Opening panel container -->
-                <img src="assets/echo/idlehour_16.png" alt="Thumbnail Image" class="panel-thumbnail"> <!-- Thumbnail image -->
-                <div class="panel-content"> <!-- Opening content container (title + description) -->
-                  <h4 class="panel-title">Idlehour Loop 16.3</h4> <!-- Title of the panel -->
-                  <p class="panel-description">Distance (mi): 16.3, Total Ascent (ft): 4166</p> <!-- Description text -->
-                </div> <!-- Closing content container (panel-content) -->
-              </div> <!-- Closing panel container (panel) -->
-            </a> <!-- Closing the link -->
-          </div> <!-- Closing hike-container for Expert hike level -->
-        </div> <!-- content -->
-      </div> <!-- EchoMtnLoop -->
-
-            
-
-
-    </div> <!-- NextHike -->
-
-    <!-- Future Hikes -->
-    <div id="FutureHikes" class="hike-section-container">
-      <h2>Future Hikes:</h2>
-
-
-
       <div id="Carbon Canyon Redwoods">
         <button class="collapsible">2025-Jan-4: Carbon Canyon Redwoods</button>
 
@@ -665,8 +605,16 @@
               Distance: Total route: 14, but can turn around anytime<br>
               Route Type: Out and Back<br>
           </p>
+          <!-- <div class="responsive-iframe">
+            <iframe 
+                class="hike-iframe"
+                title="Example Primary Pollutant with Weather" 
+                src="https://widget.airnow.gov/aq-dial-widget-pollutant-weather/index.html?city=Chino%20Hills&state=CA&country=USA">
+            </iframe>
+          </div> -->
 
-          
+
+
           <div id="echo-footer">
             <iframe id="mapmyfitness_route" 
                     src="https://www.mapmyfitness.com/routes/view/6367503349/?width=600&height=376&elevation=true&info=true&line_color=E61900DC&rgbhex=DC0019&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&show_marker_every=1&last_updated=2024-10-15T06:52:36+00:00"
@@ -674,20 +622,30 @@
                     width="100%" 
                     frameborder="0">
             </iframe>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.mapmyrun.com/routes/view/6276462301">
+              <p>View Route Details</p>
+            </a>
             <a class="weatherwidget-io" href="https://forecast7.com/en/33d99n117d73/chino-hills/?unit=us" data-label_1="CHINO HILLS" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="pure" >
               CHINO HILLS WEATHER
             </a>
             <script>
               !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
             </script>
-            <a rel="noopener noreferrer" target="_blank" href="https://www.mapmyrun.com/routes/view/6286213267">
-              <p>View Route Details</p>
-            </a>
+            <br>
+            <br>
+
           </div> <!-- echo-footer -->
-        <div class="content">Route: <a href="https://www.mapmyfitness.com/routes/view/6367503349/">Carbon Canyon</a>
         </div> <!-- content -->
-        </div> <!-- content -->
-      </div> <!-- Castle Canyon -->
+      </div> <!-- Carbon Canyon -->
+
+
+
+
+    </div> <!-- NextHike -->
+
+    <!-- Future Hikes -->
+    <div id="FutureHikes" class="hike-section-container">
+      <h2>Future Hikes:</h2>
 
       <!-- West Fork -->
       <div id="westfork">
@@ -1288,6 +1246,55 @@
       </div> <!-- EchoMtnLoop -->
 
 
+      <div id="EchoMtnLoop">
+        <!-- Add a button for the collapsible section -->
+        <button class="collapsible">2024-Dec-28: Echo Mountain / Idlehour Loop</button>
+        <div class="content">
+          <p>
+            Location: <a href="https://maps.app.goo.gl/MKkJGizo9MwuxVTw8" target="_blank" rel="noopener noreferrer">Cobb Estate Trailhead Echo Mt</a><br>
+            Time at Trailhead: 06:30AM <br>
+            Parking: Lake and E Loma Alta Dr, Pasadena<br>
+            Distance: 5.5 mi / 16.5 mi<br>
+            Route Type: Out and back / Loop<br>
+          </p>
+
+          <div id="echo-footer">
+            <div class="blue-square"></div>
+
+            <iframe id="mapmyfitness_route" 
+                    src="https://www.mapmyrun.com/routes/view/embedded/6286213267?width=600&height=376&elevation=true&info=true&line_color=E61900DC&rgbhex=DC0019&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&show_marker_every=1&last_updated=2024-10-15T06:52:36+00:00"
+                    height="679px" 
+                    width="100%" 
+                    frameborder="0">
+            </iframe>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/34d15n118d14/pasadena/?unit=us" data-label_1="PASADENA" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="pure" >
+              PASADENA WEATHER
+            </a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.mapmyrun.com/routes/view/6286213267">
+              <p>View Route Details</p>
+            </a>
+          </div> <!-- echo-footer -->
+
+          <!-- Expert -->
+          <div id="Expert" class="hike-container"> <!-- Opening container for Expert hike level -->
+            <div class="black-diamond"> </div>
+            <a href="https://www.mapmyrun.com/routes/view/6290258278" class="hike-link">
+              <div class="panel"> <!-- Opening panel container -->
+                <img src="assets/echo/idlehour_16.png" alt="Thumbnail Image" class="panel-thumbnail"> <!-- Thumbnail image -->
+                <div class="panel-content"> <!-- Opening content container (title + description) -->
+                  <h4 class="panel-title">Idlehour Loop 16.3</h4> <!-- Title of the panel -->
+                  <p class="panel-description">Distance (mi): 16.3, Total Ascent (ft): 4166</p> <!-- Description text -->
+                </div> <!-- Closing content container (panel-content) -->
+              </div> <!-- Closing panel container (panel) -->
+            </a> <!-- Closing the link -->
+          </div> <!-- Closing hike-container for Expert hike level -->
+        </div> <!-- content -->
+      </div> <!-- EchoMtnLoop -->
+
+            
 
     </div> <!-- PastHikes -->
   </div> <!-- Container Div -->
