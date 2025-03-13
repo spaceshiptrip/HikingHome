@@ -650,3 +650,10 @@ p {
 
 
 /* end new stuff */
+
+#nexthike {
+  position: relative;
+  top: -80px; /* Adjust to shift the element upwards */
+  padding-top: 80px;
+}
+
