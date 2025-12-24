@@ -1,38 +1,39 @@
 # nadabarkada.com
 
-The NadaBarkada site — a simple static website for our crew.
+Static website for Nada Barkada, hosted on GitHub Pages.
 
-## Live Site
+Live site: https://nadabarkada.com
 
-- https://nadabarkada.com
+---
 
-## Hosting / Deployment
+## Deployment
 
-This site is hosted on **GitHub Pages**.
+This site is deployed using GitHub Pages.
 
-- **Repo:** `spaceshiptrip/nadabarkada.com`
-- **Pages source:** `main` branch, `/` (root)
-- **Custom domain (CNAME):** `nadabarkada.com`
+- Repository: spaceshiptrip/nadabarkada.com
+- Branch: main
+- Source: / (repository root)
+- Custom domain: nadabarkada.com
+- HTTPS: Enforced
 
-### Where to change Pages settings
+### How it works
+- Any push to the main branch automatically triggers a GitHub Pages deployment.
+- DNS is managed via GoDaddy and points directly to GitHub Pages.
+- No build step or framework required; this is a fully static site.
 
-GitHub → Repo → **Settings** → **Pages**
+---
 
-You should see:
+## Development
 
-- **Build and deployment**
-  - Source: **Deploy from a branch**
-  - Branch: `main`
-  - Folder: `/ (root)`
-- **Custom domain:** `nadabarkada.com`
-- **Enforce HTTPS:** enabled (recommended)
+Clone the repository:
 
-## Local Development
+git clone git@github.com:spaceshiptrip/nadabarkada.com.git
+cd nadabarkada.com
 
-Because this is a static site, you can open `index.html` directly in a browser, but using a local server is better for relative paths.
+Edit files locally and push to main to deploy.
 
-### Option A: Python (recommended)
+---
 
-```bash
-python3 -m http.server 8000
+## License
 
+Personal project. All rights reserved.
